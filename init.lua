@@ -1,14 +1,13 @@
-vim.g.mapleader = "<Space>";
+vim.g.mapleader = "<Space>"
 
-require("config.lazy");
+require("config.lazy")
 
-vim.cmd("colorscheme tokyonight");
+vim.cmd("colorscheme tokyonight")
 
-require("config.autocmd");
-require("config.keymap");
-require("config.options");
+require("config.autocmd")
+require("config.keymap")
+require("config.options")
 
-local lspconfig = require("lspconfig");
+local lspconfig = require("lspconfig")
 
-lspconfig.lua_ls.setup({});
-
+lspconfig.lua_ls.setup({})
