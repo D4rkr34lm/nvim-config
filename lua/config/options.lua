@@ -1,4 +1,5 @@
 vim.opt.background = "dark"
+vim.opt.termguicolors = true
 
 vim.opt.number = true
 vim.opt.cursorline = true
