@@ -60,12 +60,13 @@ map("n", "f", "<Cmd> :write <CR>")
 map("n", "z", "<Cmd> :undo <CR>")
 map("n", "u", "<Cmd> :redo <CR>")
 
+-- Lsp binds
 map("n", "<Leader>l", function()
 	vim.lsp.buf.hover()
 end, "Show lsp token info")
 
+-- Picker binds
 local picker = Snacks.picker
-
 map("n", "<Leader>ff", function()
 	picker.files()
 end, "Search all files")
@@ -81,3 +82,11 @@ end, "Grep git files")
 map("n", "<Leader>gf", function()
 	picker.grep()
 end, "Grep all files")
+
+-- Git diff binds
+map("n", "<Leader>co", "<Plug>(git-conflict-ours)", "Git conflict accept ours")
+map("n", "<Leader>ct", "<Plug>(git-conflict-theirs)", "Git conflict accept theirs")
+map("n", "<Leader>cb", "<Plug>(git-conflict-both)", "Git conflict accept both")
+map("n", "<Leader>c0", "<Plug>(git-conflict-none)", "Git conflict accept none")
+map("n", "<Leader>c+", "<Plug>(git-conflict-prev-conflict)", "Git conflict goto previos")
+map("n", "<Leader>c#", "<Plug>(git-conflict-next-conflict)", "Git conflict goto next")
