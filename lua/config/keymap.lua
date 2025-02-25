@@ -1,3 +1,5 @@
+require("snacks")
+
 local keymap = vim.keymap
 local cmd = vim.cmd
 
@@ -60,4 +62,22 @@ map("n", "u", "<Cmd> :redo <CR>")
 
 map("n", "<Leader>l", function()
 	vim.lsp.buf.hover()
-end)
+end, "Show lsp token info")
+
+local picker = Snacks.picker
+
+map("n", "<Leader>ff", function()
+	picker.files()
+end, "Search all files")
+
+map("n", "<Leader>fg", function()
+	picker.git_files()
+end, "Search git files")
+
+map("n", "<Leader>gg", function()
+	picker.git_grep()
+end, "Grep git files")
+
+map("n", "<Leader>gf", function()
+	picker.grep()
+end, "Grep all files")
