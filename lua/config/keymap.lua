@@ -54,3 +54,10 @@ end)
 map("i", "ff", "<Esc>")
 
 map("n", "f", "<Cmd> :write <CR>")
+
+map("n", "z", "<Cmd> :undo <CR>")
+map("n", "u", "<Cmd> :redo <CR>")
+
+map("n", "<Leader>l", function()
+	vim.lsp.buf.hover()
+end)
