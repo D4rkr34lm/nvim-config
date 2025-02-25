@@ -6,6 +6,7 @@ return {
 			"stylua",
 			"rust-analyzer",
 			"rustfmt",
+			"typescript-language-server",
 		},
 	},
 }

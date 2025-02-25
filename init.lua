@@ -8,11 +8,7 @@ require("config.autocmd")
 require("config.keymap")
 require("config.options")
 
-local lspconfig = require("lspconfig")
-
-lspconfig.lua_ls.setup({})
-lspconfig.rust_analyzer.setup({})
-
+require("lsp.init")
 require("snacks")
 
 Snacks.explorer.open()
