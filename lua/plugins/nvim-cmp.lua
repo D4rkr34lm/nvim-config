@@ -14,6 +14,7 @@ return {
 	dependencies = {
 		"hrsh7th/cmp-nvim-lsp",
 		"hrsh7th/cmp-buffer",
+		"hrsh7th/cmp-path",
 	},
 	opts = {
 		window = {
@@ -27,6 +28,7 @@ return {
 		sources = {
 			{ name = "nvim_lsp" },
 			{ name = "buffer" },
+			{ name = "path" },
 		},
 		snippet = {
 			expand = function(args)
