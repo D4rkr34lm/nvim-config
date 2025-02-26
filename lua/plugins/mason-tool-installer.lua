@@ -8,6 +8,9 @@ return {
 			"rustfmt",
 			"typescript-language-server",
 			"vue-language-server",
+			"eslint_d",
+			"eslint-lsp",
+			"prettierd",
 		},
 	},
 }
