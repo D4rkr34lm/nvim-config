@@ -1,18 +1,14 @@
 local lspconfig = require("lspconfig")
 
 lspconfig.ts_ls.setup({
+	filetypes = { "typescript", "javascript" },
+})
+
+lspconfig.volar.setup({
+	filetypes = { "vue" },
 	init_options = {
-		plugins = {
-			{
-				name = "@vue/typescript-plugin",
-				location = "/usr/local/lib/node_modules/@vue/typescript-plugin",
-				languages = { "javascript", "typescript", "vue" },
-			},
+		vue = {
+			hybridMode = false,
 		},
-	},
-	filetypes = {
-		"javascript",
-		"typescript",
-		"vue",
 	},
 })

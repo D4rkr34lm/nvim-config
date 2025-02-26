@@ -7,6 +7,7 @@ return {
 			"rust-analyzer",
 			"rustfmt",
 			"typescript-language-server",
+			"vue-language-server",
 		},
 	},
 }
