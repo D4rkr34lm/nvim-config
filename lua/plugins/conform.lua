@@ -6,6 +6,8 @@ return {
 			rust = { "rustfmt", lsp_format = "fallback" },
 			javascript = { "eslint_d", "prettierd" },
 			typescript = { "eslint_d", "prettierd" },
+			vue = { "eslint_d", "prettierd" },
+			java = { "google-java-format" },
 		},
 	},
 }

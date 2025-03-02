@@ -11,6 +11,10 @@ return {
 			"eslint_d",
 			"eslint-lsp",
 			"prettierd",
+			"java-language-server",
+			"kotlin-language-server",
+			"gradle-language-server",
+			"google-java-format",
 		},
 	},
 }
