@@ -40,3 +40,6 @@ lspconfig.volar.setup({
 		},
 	},
 })
+
+lspconfig.astro.setup({})
+lspconfig.svelte.setup({})
